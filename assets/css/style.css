@@ -1,0 +1,75 @@
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+
+  /* typgoraphy */
+  --ff-josefin-sans: 'Josefin Sans', serif;
+  --ff-alata: 'Alata', serif;
+
+  /* font size */
+  --h1: 4.7em;
+  --h2: 3.2em;
+  --h3: 2.1em;
+  --font-size-regular: 15px;
+  --font-weight-300: 300;
+
+  /* spacing */
+  --px: 165px;
+  --mb: 180px;
+}
+
+html {
+  font-family: var(--ff-alata);
+  font-size: var(--font-size-regular);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-josefin-sans);
+  font-weight: var(--font-weight-300);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/*=============== MAIN ===============*/
+main {
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--white);
+}
+
+header {
+  background: #0006 url(../images/desktop/image-hero.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 65px var(--px);
+  margin-bottom: var(--mb);
+}
+/*=============== FOOTER ===============*/
+.attribution {
+  display: none;
+}
+
+/* 8:00 */
