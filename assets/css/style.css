@@ -67,9 +67,22 @@ header {
   padding: 65px var(--px);
   margin-bottom: var(--mb);
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(min-content, min-content));
+  grid-gap: 32px;
+}
 /*=============== FOOTER ===============*/
 .attribution {
   display: none;
 }
 
-/* 8:00 */
+/* 8:40 */
