@@ -80,6 +80,30 @@ nav ul {
   grid-template-columns: repeat(5, minmax(min-content, min-content));
   grid-gap: 32px;
 }
+
+nav ul li{position:relative}
+
+nav ul li::after{
+    content:'';
+    position:absolute;
+    bottom: -10px;
+    left:50%;
+    width:0;
+    height: 2px;
+    transform: translateX(-50%);
+    background: var(--white);
+}
+
+nav ul li:hover{width:25px}
+
+.banner h1{
+    max-width: 650px;
+    padding:38px;
+    margin-bottom: 80px;
+    border: 3px solid var(--white);
+    font-size:var(--h1);
+    color: var(---white);
+}
 /*=============== FOOTER ===============*/
 .attribution {
   display: none;
