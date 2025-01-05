@@ -81,32 +81,66 @@ nav ul {
   grid-gap: 32px;
 }
 
-nav ul li{position:relative}
-
-nav ul li::after{
-    content:'';
-    position:absolute;
-    bottom: -10px;
-    left:50%;
-    width:0;
-    height: 2px;
-    transform: translateX(-50%);
-    background: var(--white);
+nav ul li {
+  position: relative;
 }
 
-nav ul li:hover{width:25px}
+nav ul li::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  background: var(--white);
+}
 
-.banner h1{
-    max-width: 650px;
-    padding:38px;
-    margin-bottom: 80px;
-    border: 3px solid var(--white);
-    font-size:var(--h1);
-    color: var(---white);
+nav ul li:hover::after {
+  width: 25px;
+}
+
+/*=============== HEADER  ===============*/
+.banner h1 {
+  max-width: 650px;
+  padding: 38px;
+  margin-bottom: 80px;
+  border: 3px solid var(--white);
+  font-size: var(--h1);
+  color: var(---white);
+}
+/*=============== ABOUT  ===============*/
+.about {
+  position: relative;
+  padding: 0 var(--px);
+  margin-bottom: var(--mb);
+}
+
+.about .img-box img {
+  display: block;
+}
+
+.about .content-box {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  padding: 95px;
+  max-width: 640px;
+  background-color: var(--white);
+}
+
+.about .content-box h2 {
+  font-size: var(--h2);
+  margin-bottom: 30px;
+}
+
+.about .content-box p {
+  color: var(--dark-gray);
+  line-height: 1.7;
 }
 /*=============== FOOTER ===============*/
 .attribution {
   display: none;
 }
 
-/* 8:40 */
+/* 12:40 */
