@@ -107,7 +107,7 @@ nav ul li:hover::after {
   margin-bottom: 80px;
   border: 3px solid var(--white);
   font-size: var(--h1);
-  color: var(---white);
+  color: var(--white);
 }
 /*=============== ABOUT  ===============*/
 .about {
@@ -138,6 +138,82 @@ nav ul li:hover::after {
   color: var(--dark-gray);
   line-height: 1.7;
 }
+/*=============== PRODUCT ===============*/
+.product {
+  position: relative;
+  padding: 0 var(--px);
+  margin-bottom: var(--mb);
+}
+
+.product h2 {
+  font-size: var(--h2);
+  margin-bottom: 80px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-content: center;
+  grid-gap: 30px;
+}
+
+.product-card {
+  position: relative;
+  height: 450px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.product-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.5s;
+}
+
+.product-card:hover img {
+  transform: scale(1.25);
+}
+
+.product-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, #000b);
+}
+
+.product-card:hover::after {
+  background: linear-gradient(180deg, #fffa 40%, #555a);
+}
+
+.product-card h3 {
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  font-size: var(--h3);
+  color: var(--white);
+  z-index: 5;
+}
+
+.product-card:hover h3 {
+  color: var(--black);
+}
+
+.btn-primary {
+  position: absolute;
+  right: var(--px);
+  top: 5px;
+  padding: 8px 35px;
+  letter-spacing: 5px;
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+.btn-primary:hover {
+  color: var(--white);
+  background: var(--black);
+}
+
 /*=============== FOOTER ===============*/
 .attribution {
   display: none;
