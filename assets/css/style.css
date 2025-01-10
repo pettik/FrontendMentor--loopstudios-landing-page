@@ -215,8 +215,12 @@ nav ul li:hover::after {
 }
 
 /*=============== FOOTER ===============*/
+footer {
+  background-color: var(--black);
+}
+
 .attribution {
   display: none;
 }
 
-/* 12:40 */
+/* 21:46 */
