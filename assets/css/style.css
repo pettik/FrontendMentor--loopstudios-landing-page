@@ -217,6 +217,16 @@ nav ul li:hover::after {
 /*=============== FOOTER ===============*/
 footer {
   background-color: var(--black);
+  padding: 45px var(--px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  margin-bottom: 20px;
+}
+.footer-brand img {
+  margin-bottom: 140px;
 }
 
 .attribution {
