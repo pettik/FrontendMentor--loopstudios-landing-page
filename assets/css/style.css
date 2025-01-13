@@ -229,6 +229,30 @@ footer {
   margin-bottom: 140px;
 }
 
+/* footer nav styled with header */
+.footer-right {
+  text-align:right;
+}
+
+.social-links{
+  margin-bottom: 20px;
+}
+
+.social-links a{
+  font-size: 1.8em;
+  color: var(--white)
+}
+
+.social-links a:not(:last-child){
+  margin-right: 12px;;
+}
+
+.copyright{
+  color: var(--very-dark-gray)
+}
+
+
+
 .attribution {
   display: none;
 }
