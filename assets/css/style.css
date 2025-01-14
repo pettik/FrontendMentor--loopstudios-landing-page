@@ -75,6 +75,11 @@ header {
   margin-bottom: 120px;
 }
 
+.mobile-nav-brand {
+  display: none;
+  cursor: pointer;
+}
+
 nav ul {
   display: grid;
   grid-template-columns: repeat(5, minmax(min-content, min-content));
@@ -98,6 +103,11 @@ nav ul li::after {
 
 nav ul li:hover::after {
   width: 25px;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  display: none;
 }
 
 /*=============== HEADER  ===============*/
@@ -231,30 +241,98 @@ footer {
 
 /* footer nav styled with header */
 .footer-right {
-  text-align:right;
+  text-align: right;
 }
 
-.social-links{
+.social-links {
   margin-bottom: 20px;
 }
 
-.social-links a{
+.social-links a {
   font-size: 1.8em;
-  color: var(--white)
+  color: var(--white);
 }
 
-.social-links a:not(:last-child){
-  margin-right: 12px;;
+.social-links a:not(:last-child) {
+  margin-right: 12px;
 }
 
-.copyright{
-  color: var(--very-dark-gray)
+.copyright {
+  color: var(--very-dark-gray);
 }
-
-
 
 .attribution {
   display: none;
 }
 
-/* 21:46 */
+/*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 1200px) {
+  :root {
+    --px: 80px;
+  }
+
+  /* ABOUT */
+  .about .img-box {
+    margin-bottom: 80px;
+  }
+
+  .about .img-box img {
+    width: 100%;
+  }
+
+  .about .content-box {
+    position: static;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 95px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Header */
+
+  .mobile-nav-brand {
+    display: flex;
+    position: absolute;
+    right: 25px;
+    left: 25px;
+    top: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-nav-brand img {
+    max-width: 145px;
+  }
+
+  .navbar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--black);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    transition: 0.25s;
+  }
+
+  .navbar-nav ul {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+
+  .navbar-nav ul li a {
+    font-family: var(--ff-josefin-sans);
+    font-size: 25px;
+    font-weight: var(--font-weight-300);
+    text-transform: uppercase;
+  }
+
+  .nav-toggler {
+    display: block;
+  }
+}
+/* 29:00 */
