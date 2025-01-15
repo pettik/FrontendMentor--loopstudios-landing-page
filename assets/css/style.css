@@ -313,7 +313,8 @@ footer {
     height: 100vh;
     background: var(--black);
     padding: 25px;
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     z-index: 10;
     transition: 0.25s;
@@ -331,8 +332,58 @@ footer {
     text-transform: uppercase;
   }
 
-  .nav-toggler {
+  .nav-toggle {
     display: block;
   }
+
+  /* PRODUCT */
+  .product h2 {
+    text-align: center;
+  }
+
+  .btn-primary {
+    position: static;
+    display: block;
+    width: max-content;
+    margin: auto;
+    margin-top: 80px;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    margin-bottom: 30px;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+  .footer-nav ul {
+    place-content: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
 }
-/* 29:00 */
+@media screen and (max-width: 768px) {
+  :root {
+    --h1: 4em;
+    --h2: 2.8em;
+
+    --px: 40px;
+    --mb: 120px;
+  }
+
+  .banner h1 {
+    padding: 22px;
+  }
+
+  .about .content-box {
+    padding: 0 50px;
+  }
+}
+/* 32:00 */
