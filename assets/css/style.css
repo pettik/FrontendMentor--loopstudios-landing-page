@@ -245,7 +245,8 @@ footer {
 }
 
 .social-links {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin-bottom: 160px;
 }
 
 .social-links a {
@@ -361,6 +362,10 @@ footer {
   .footer-brand {
     text-align: center;
   }
+
+  .footer-brand img {
+    margin-bottom: 50px;
+  }
   .footer-nav ul {
     place-content: center;
   }
@@ -384,6 +389,18 @@ footer {
 
   .about .content-box {
     padding: 0 50px;
+  }
+
+  footer {
+    padding: 55px var(--px);
+  }
+
+  .footer-left {
+    margin-bottom: 50px;
+  }
+
+  .footer-brand {
+    margin-bottom: 30px;
   }
 }
 /* 32:00 */
