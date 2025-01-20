@@ -403,4 +403,13 @@ footer {
     margin-bottom: 30px;
   }
 }
-/* 32:00 */
+@media screen and (max-width: 576px) {
+  :root {
+    --h1: 2.6em;
+    --h2: 2.1em;
+    --h3: 1.6em;
+
+    --px: 25px;
+    --mb: 100px;
+  }
+}
