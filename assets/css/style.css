@@ -412,4 +412,62 @@ footer {
     --px: 25px;
     --mb: 100px;
   }
+
+  header {
+    background: url(../images/mobile/image-hero.jpg) center no-repeat;
+    background-size: cover;
+    padding: 40px var(--px);
+  }
+
+  .navbar {
+    margin-bottom: 160px;
+  }
+
+  .navbar-brand img {
+    max-width: 145px;
+  }
+
+  .banner h1 {
+    margin-bottom: 175px;
+  }
+
+  .about .img-box {
+    margin-bottom: 50px;
+  }
+
+  .about .content-box {
+    padding: 0 15px;
+  }
+
+  .about .content-box h2 {
+    margin-bottom: 20px;
+  }
+
+  .product h2 {
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    grid-gap: 25px;
+  }
+
+  .product-card {
+    height: 117px;
+  }
+
+  .product-card h3 {
+    bottom: 15px;
+    left: 20px;
+  }
+
+  .btn-primary {
+    margin-top: 15px;
+  }
+
+  .footer-nav ul {
+    grid-template-columns: 1fr;
+    grid-template-
+    grid-gap: 20px;
+    text-align: center;
+  }
 }
