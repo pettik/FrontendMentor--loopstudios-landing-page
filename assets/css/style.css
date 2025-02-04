@@ -333,12 +333,13 @@ footer {
     text-transform: uppercase;
   }
 
-  nav ul li::hover a {text-decoration:underline}
+  nav ul li::hover a {
+    text-decoration: underline;
+  }
 
   .navbar-nav.active {
     display: flex;
   }
-
 
   .nav-toggle {
     display: block;
@@ -461,7 +462,7 @@ footer {
   .product-card {
     height: 117px;
   }
-  
+
   .product-card h3 {
     bottom: 15px;
     left: 20px;
@@ -473,12 +474,11 @@ footer {
 
   .footer-nav ul {
     grid-template-columns: 1fr;
-    grid-template-
     grid-gap: 20px;
     text-align: center;
   }
 
-  .social-links{
+  .social-links {
     margin-bottom: 15px;
   }
 }
