@@ -233,10 +233,10 @@ footer {
 }
 
 .footer-brand {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .footer-brand img {
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 }
 
 /* footer nav styled with header */
@@ -246,7 +246,7 @@ footer {
 
 .social-links {
   /* margin-bottom: 20px; */
-  margin-bottom: 160px;
+  margin-bottom: 130px;
 }
 
 .social-links a {
